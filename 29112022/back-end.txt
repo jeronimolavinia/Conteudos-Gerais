@@ -1,0 +1,49 @@
+1- Desbloquear o dispositivo
+    1.1- Digitar a senha para o desbloqueio do dispositivo
+    1.2- Verificar conexão de internet 
+    1.3- Procurar app da loja na interface do celular
+    1.4- Clicar na logo do app da loja
+    1.5- Aguardar sistema executar o app da loja
+2- Acessar o app da loja da amazon 
+3- Ir na barra de pesquisa
+4- Digitar o nome do produto
+5- Selecionar algum tipo de modelo do produto 
+6- Verificar especificações do modelo do produto
+7- Selecionar a quantidade do produto
+8- Selecionar a cor do produto
+9- Verificar o preço do modelo produto
+10- Executar a compra do produto
+11- Colocar o endereço de entrega do produto
+12- Escolher a forma de pagamento do produto
+
+
+========================================================================================
+
+1- Digitar o primeiro numero 
+2- Digitar o segundo numero
+2- Selecionar o tipo de operação 
+2.1- adição
+3- Calcular e armazenar a soma do primeiro numero com o segundo numero
+4- Armazenar o valor da soma 
+5- Apresentar o resultado do valor armazenado
+
+Entrada processamento e Saída em codigo
+ var num1
+ var num2 
+========================================================================================
+
+ TAREFA: Elaborar um programa de calculo para o valor do imposto de renda baseado no salário
+ (Aliquota 7.5%)
+ const aliquota = 7.5
+ var num1;
+ var num2;
+ var calculo;
+
+ readln("digite o primeiro numero")
+ readln("digite o segundo numero")
+ writeln("o resultado do calculo")
+
+
+
+
+ 
