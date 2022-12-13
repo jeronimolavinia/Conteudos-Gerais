@@ -1,0 +1,12 @@
+programa {
+  caracter mensagem
+
+  funcao gerador(){
+
+    escreva("Olá Mundo")
+    leia(mensagem)
+  }
+
+
+  funcao inicio() {
+   gerador() 
