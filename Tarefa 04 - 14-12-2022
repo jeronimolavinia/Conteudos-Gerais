@@ -1,0 +1,21 @@
+Faça um programa que escreva a mensagem "Ola mundo!" e possibilite que usuario repita de acordo com numero digitado. 
+
+programa {
+
+  inteiro repeticoes = 0
+  funcao numerosRepeticao(){
+    escreva("Digite um numero: ")
+    leia(repeticoes)
+
+  }
+  funcao repetidor() {
+    para(inteiro x = 0; x < repeticoes; x++){
+      escreva("Olá mundo! \n")
+    }
+  funcao inicio(){
+    numerosRepeticao()
+    repetidor()
+  }  
+    
+  }
+}
