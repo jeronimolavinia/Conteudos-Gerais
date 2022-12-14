@@ -1,0 +1,28 @@
+
+//Faça um programa que leia 6 numeros e mostre o menor numero
+
+programa {
+  funcao leitura() {
+    inteiro n[6]
+    inteiro menorNumero = 999999
+
+    para(inteiro x = 0; x < 6; x++){
+      escreva("Digite o numero: ")
+      leia(n[x])
+      
+      se(menorNumero > n[x]){
+        menorNumero = n[x]
+      }
+    }
+    escreva("O menor numero é: ", menorNumero)
+  
+  }
+  funcao inicio(){
+    leitura()
+  }
+}
+
+
+  }
+}
+
