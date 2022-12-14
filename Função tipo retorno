@@ -36,8 +36,6 @@ programa {
 
     escreva("O valor retornado é: ", calculo1(1 , 2)
 =======================================================================================
-
-
 //Crie um progrma que tenha uma função que solicite a idade do usuario
 // e retorne o seu valor já escrevendo o resultado/
 
@@ -55,4 +53,37 @@ programa {
      
   }
 }
+=============================================================================
+
+//Crie um programa com 3 numeros e retorne o valor da media 
+
+programa {
+  inteiro valorRetornado = 0 
+  funcao real calculo1 (inteiro num1, inteiro num2, inteiro num3) {
+    retorne (num1 + num2 + num3)/3
+    
+  }
+  funcao inicio(){
+    valorRetornado = calculo1(10 , 10 , 10)
+
+    escreva("A média é: ", valorRetornado)
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
