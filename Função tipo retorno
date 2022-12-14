@@ -55,20 +55,19 @@ programa {
 }
 =============================================================================
 
-//Crie um programa com 3 numeros e retorne o valor da media 
+///Crie um programa com 3 notas e retorne o valor da media das notas
 
 programa {
   inteiro valorRetornado = 0 
-  funcao real calculo1 (inteiro num1, inteiro num2, inteiro num3) {
-    retorne (num1 + num2 + num3)/3
+  funcao real calculo (inteiro nota1, inteiro nota2, inteiro nota3) {
+    retorne (nota1 + nota2 + nota3)/3
     
   }
   funcao inicio(){
-    valorRetornado = calculo1(10 , 10 , 10)
+    valorRetornado = calculo(10 , 10 , 10)
 
-    escreva("A média é: ", valorRetornado)
+    escreva("A média das notas é: ", valorRetornado)
     
-
 
 
 
