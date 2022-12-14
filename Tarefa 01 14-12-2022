@@ -1,0 +1,48 @@
+Faça um programa que leia 4 numeros e mostre o maior numero 
+
+programa {
+  funcao leitura() {
+    inteiro n[4]
+    inteiro maiorNumero = 0
+
+    para(inteiro x = 0; x < 4; x++){
+      escreva("Digite o numero: ")
+      leia(n[x])
+      
+      se(maiorNumero < n[x]){
+        maiorNumero = n[x]
+      }
+    }
+    escreva("O maior numero é: ", maiorNumero)
+  
+  }
+  funcao inicio(){
+    leitura()
+  }
+}
+
+========================================================================================
+
+programa {
+  inteiro numeroMaiorGlobal = 0
+
+  funcao controlaMaiorNumero(inteiro numeroAComparar, inteiro numMaior) {
+    se(numeroAComparar > numMaior){
+      numeroMaiorGlobal = numeroAComparar
+    }
+    
+  }
+  funcao obterNumeros(){
+    inteiro numeros[4]
+
+    para(inteiro i = 0; i < 4; i++){
+      escreva("Informe um numero: ")
+      leia(numeros[i])
+    }
+    escreva("O maior numero é: ", numeroMaiorGlobal)
+  }
+  funcao inicio(){
+    obterNumeros()
+  }
+}
+
