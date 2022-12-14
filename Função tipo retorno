@@ -1,0 +1,58 @@
+FUNÇÃO DO TIPO RETORNO 
+
+programa {
+  inteiro valorRetornado = 0 
+  funcao real meuRetorno1 (inteiro numeroDigitado) {
+    retorne numeroDigitado
+    
+  }
+  funcao inicio(){
+    valorRetornado = meuRetorno1(3)
+
+    escreva("O valor retornado é: ", valorRetornado)
+
+========================================================================================
+
+programa {
+  inteiro valorRetornado = 0 
+  funcao real calculo1 (inteiro num1, inteiro num2) {
+    retorne num1 + num2
+    
+  }
+  funcao inicio(){
+    valorRetornado = calculo1(1 , 2)
+
+    escreva("O valor retornado é: ", valorRetornado)
+    
+======================================================================================
+programa {
+  inteiro valorRetornado = 0 
+  funcao real calculo1 (inteiro num1, inteiro num2) {
+    retorne num1 + num2
+    
+  }
+  funcao inicio(){
+
+
+    escreva("O valor retornado é: ", calculo1(1 , 2)
+=======================================================================================
+
+
+//Crie um progrma que tenha uma função que solicite a idade do usuario
+// e retorne o seu valor já escrevendo o resultado/
+
+programa {
+  
+  funcao inteiro obterIdade(){
+    inteiro idade = 0
+    escreva("Digite uma idade ")
+    leia(idade)
+    retorne idade 
+  }
+
+  funcao inicio() {
+    escreva("A idade digita é: ", obterIdade())
+     
+  }
+}
+
