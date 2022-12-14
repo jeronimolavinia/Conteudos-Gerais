@@ -1,0 +1,27 @@
+Media dos 5 numeros 
+
+Programa {
+real notasSomadas = 0.0
+real media = 0.0
+  funcao somarNotas (real notaDigitada){
+    notasSomadas = notasSomadas + notaDigitada
+  }
+  funcao calculoMedia (real notasSomadasLocal){
+    media = notasSomadasLocal/5
+  }
+
+  funcao obterNotas() {
+    inteiro n[5]
+    para(inteiro x = 0; x < 5; x++){
+      escreva("Digite a nota ")
+      leia(n[x])
+      somarNotas(n[x])
+    }
+    escreva("A media é: ", notasSomadas)
+  }
+  
+  funcao inicio(){
+    obterNotas()
+  }
+  
+}
