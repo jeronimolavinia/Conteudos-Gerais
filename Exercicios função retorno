@@ -47,7 +47,6 @@ programa {
     retorne n1 + n2 + n3
   }
   
- 
     
   funcao inicio(){
     escreva("digite um numero: ")
@@ -65,9 +64,19 @@ programa {
     escreva("\n")
 
 
-
-
-
-
+=====================================================================================================
 
 4- Faça um programa que escreva a mensagem "Bom dia" a quantidade de vezes que o usuário quiser.
+programa {
+  inteiro mensagemDigitada 
+  funcao inteiro repetir(inteiro repeticoes){
+    para(inteiro x = 0; x < mensagemDigitada; x++){
+      escreva("Bom dia! \n")
+
+    }
+  }
+  funcao inicio(){
+    escreva(" Digite a quantidade de vezes \n")
+    leia(mensagemDigitada)
+    repetir(mensagemDigitada)
+
