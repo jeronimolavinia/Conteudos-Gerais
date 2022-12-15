@@ -69,9 +69,10 @@ programa {
     escreva("A média das notas é: ", valorRetornado)
     
  =======================================================================================
- programa {
-  inteiro valor1 = 0
-  inteiro valor2 = 0
+
+programa {
+  inteiro n1 = 0
+  inteiro n2 = 0
   
   funcao real soma(inteiro n1, inteiro n2) {
     retorne n1 + n2 
@@ -90,36 +91,24 @@ programa {
   }
     
   funcao inicio(){
-  
-    escreva("A soma entre os dois numeros é: ", soma(10 ,10))
+    escreva("digite um numero: ")
+    leia(n1)
+
+    escreva("digite um numero: ")
+    leia(n2)
+
+    escreva("A soma entre os dois numeros é: ", soma(n1 ,n2))
     escreva("\n")
-    escreva("A subtração entre os dois numeros é: ", subtracao(10 , 10))
+    escreva("A subtração entre os dois numeros é: ", subtracao(n1 , n2))
     escreva("\n")
-    escreva("A multiplicação entre os dois numeros é: ", multiplicacao( 10, 10))
+    escreva("A multiplicação entre os dois numeros é: ", multiplicacao(n1, n2))
     escreva("\n")
-    escreva("A divisão entre os dois numeros é: ", divisao(10,10))
+    escreva("A divisão entre os dois numeros é: ", divisao(n1, n2))
+  }
     
 }
 
-  funcao real multiplicacao(inteiro n1, inteiro n2){
-    retorne n1 * n2
-  }
 
-  funcao real divisao(inteiro n1, inteiro n2){
-    retorne n1/n2
-  }
-    
-  funcao inicio(){
-  
-    escreva("A soma entre os dois numeros é: ", soma(10 ,10))
-    escreva("\n")
-    escreva("A subtração entre os dois numeros é: ", subtracao(10 , 10))
-    escreva("\n")
-    escreva("A multiplicação entre os dois numeros é: ", multiplicacao( 10, 10))
-    escreva("\n")
-    escreva("A divisão entre os dois numeros é: ", divisao(10,10))
-    
-}
 
  
  
