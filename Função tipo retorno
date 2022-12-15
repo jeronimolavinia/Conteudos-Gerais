@@ -69,7 +69,47 @@ programa {
     escreva("A média das notas é: ", valorRetornado)
     
  =======================================================================================
- 
+ //Faça um sistema que otenha 2 numeros do usuario
+// e armazene-os em 2 variaveis globais 
+// criando 4 funcoes que representam as 4 operaçoes matematicas
+// e vai escrever " a soma entre os dois numeros é:"
+// OBS: as funcoes precisam ser chamadas denro da funcao
+// OBS: as funcoes precisam receber o os valores como parametros
+
+programa {
+  inteiro valor1 = 0
+  inteiro valor2 = 0
+  inteiro valor3 = 0
+  inteiro valor4 = 0 
+  
+  funcao real soma(inteiro n1, inteiro n2) {
+    retorne n1 + n2 
+  }
+  
+  funcao real subtracao(inteiro n1, inteiro n2 ){
+    retorne n1 - n2 
+  }
+
+  funcao real multiplicacao(inteiro n1, inteiro n2){
+    retorne n1 * n2
+  }
+
+  funcao real divisao(inteiro n1, inteiro n2){
+    retorne n1/n2
+  }
+    
+  funcao inicio(){
+  
+    escreva("A soma entre os dois numeros é: ", soma(10 ,10))
+    escreva("\n")
+    escreva("A subtração entre os dois numeros é: ", subtracao(10 , 10))
+    escreva("\n")
+    escreva("A multiplicação entre os dois numeros é: ", multiplicacao( 10, 10))
+    escreva("\n")
+    escreva("A divisão entre os dois numeros é: ", divisao(10,10))
+    
+}
+
  
  
  
