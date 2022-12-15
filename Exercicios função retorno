@@ -36,4 +36,38 @@ funcao cadeia inserirTexto(cadeia fraseDigitada){
 
 
 3- Faça um programa para calcular a soma de 3 numeros inteiros, e mostrar o resultado para o usuário
+
+programa {
+  inteiro n1 
+  inteiro n2
+  inteiro n3
+ 
+  
+  funcao real soma(inteiro n1, inteiro n2, inteiro n3) {
+    retorne n1 + n2 + n3
+  }
+  
+ 
+    
+  funcao inicio(){
+    escreva("digite um numero: ")
+    leia(n1)
+
+    escreva("digite um numero: ")
+    leia(n2)
+
+    
+    escreva("digite um numero: ")
+    leia(n3)
+
+
+    escreva("A soma entre os dois numeros é: ", soma(n1 ,n2, n3))
+    escreva("\n")
+
+
+
+
+
+
+
 4- Faça um programa que escreva a mensagem "Bom dia" a quantidade de vezes que o usuário quiser.
