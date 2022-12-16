@@ -1,0 +1,80 @@
+
+/*
+1 - Criar um programa que obtenha 5 nomes, apos obter os nomes escreva a 
+    seguinte mensagem para cada nome obtido:
+    "Bom dia [nome], é um prazer ter voce aqui"
+
+2 - Baseado no programa anterior, agora voce vai obter 5 notas
+    Em um outro vetor (com nome aprovados), voce vai armazenar um valor boleano
+    informando se a pessoa está aprovada ou reprovada (verdadeiro ou falso);
+    A nota precisa ser maior que para que a pessoa correspondente seja aprovada. 
+*/ 
+
+programa {
+  
+  funcao cadeia nomes (){
+    para(inteiro x = 0; x < 5; x++){
+      escreva("\n")
+      escreva("Digite o nome ")
+      leia(n[x])
+
+    }
+  }
+  funcao lernomes(){
+    nomes()
+    para(inteiro x = 0; x < 5; x++){
+      escreva("\n")
+      escreva("Bom dia ", nomes[x] ,"é um prazer te conhecer ")
+    }
+  }
+  funcao inicio(){
+    lernomes()
+    }
+
+=====================================================================================
+
+/*Baseado no programa anterior, agora voce vai obter 5 notas
+    Em um outro vetor (com nome aprovados), voce vai armazenar um valor boleano
+    informando se a pessoa está aprovada ou reprovada (verdadeiro ou falso);
+    A nota precisa ser >= 5 que para que a pessoa correspondente seja aprovada. 
+*/ 
+
+programa {
+  real notas[5]
+  logico resultado [5] 
+  cadeia nomes[5]
+
+  funcao obterNomes(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite o nome " )
+      leia(nomes[i]) 
+    }
+  }
+  funcao obterNotas(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite a nota " )
+      leia(notas[i]) 
+    }
+  }
+  funcao obterResultado(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("O resultado é \n")
+      leia(resultado[i])
+      se(resultado[i] >= 5){
+        resultado[i] = verdadeiro
+        senao{
+          resultado[i] = falso
+        }
+        
+      }
+    }
+  funcao inicio(){
+    obterNomes()
+    obterNotas()
+    obterResultado()
+    
+    escreva("Notas", resultado)
+ 
+    
+
+
