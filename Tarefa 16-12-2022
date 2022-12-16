@@ -1,0 +1,98 @@
+/*Tarefas
+
+1- Faça um programa que leia 5 nomes de filmes, e armazene-os em um vetor. 
+Use funções para obter os nomes.
+
+programa {
+  cadeia nomesGlobal [5]
+  funcao obterNomes(){
+
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite o nome do filme:  ")
+      leia(nomesGlobal[i])
+    }
+  funcao inicio(){
+    obterNomes()
+    escreva("Os filmes são:  ", nomesGlobal)
+
+  }
+
+  }
+
+======================================================================================
+
+2- Faça um programa que leia 5 preços, armazene os preços em um vetor. 
+Use funções.
+programa {
+  real precosGlobal [5]
+  funcao obterPrecos(){
+
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Digite o preço: ")
+      leia(precosGlobal[i])
+    }
+  funcao inicio(){
+    obterPrecos()
+    escreva("Os preços são: " , precosGlobal)
+
+  }
+
+  }
+========================================================================================
+3- Faça um programa baseado nos programas anteriores que armazene 5 nomes de filmes num vetor,  
+armazene os preços do ingresso dos 5 filmes em outro vetor, 
+crie mais um vetor para armazenar a sinopse de cada um dos filmes. 
+
+Aí final escreva para cada filme:
+Ex:
+Avatar, ingresso R$15,00, sinopse: Uma nova aventura do diretor....
+
+
+programa {
+  real precosGlobal [5]
+  cadeia nomesGlobal [5]
+  
+  funcao obterNomes(){
+
+    para(inteiro i = 0; i < 5; i++){
+      escreva("")
+      leia(nomesGlobal[i])
+    }
+
+  funcao obterPrecos(){
+    para(inteiro i = 0; i < 5; i++){
+      escreva("Preço: ")
+      leia(precosGlobal[i])
+
+    }
+  
+  }
+  funcao inicio(){
+    obterNomes()
+    obterPrecos()
+    
+    escreva(nomesGlobal[0], ", ingresso R$ " , precosGlobal[0])
+    ("/n")
+    escreva(nomesGlobal[1], "ingresso R$ " , precosGlobal[1] , " reais, ")
+    ("/n")
+    escreva(nomesGlobal[2], ", ingresso R$ " , precosGlobal[2] , " reais, ")
+    ("/n")
+    escreva(nomesGlobal[3], " ,ingresso R$ " , precosGlobal[3] , " reais, ")
+    ("/n")
+    escreva(nomesGlobal[4], " ,ingresso R$ " , precosGlobal[4] , " reais, ")
+
+  }
+
+4- baseado no programa anterior
+crie mais um vetor para armazenar para cada filmes um número de 1 a 5, 
+essa numeração será informada pelo usuário,  que significa seu nível de popularidade.
+
+Aí final, além da mensagem do exercício anterior,  vc vai dizer para cada filme, dependendo de sua nota de popularidade:
+1: Muito ruim
+2: ruim
+3: Peba
+4: Bonzinho
+5: Muito top!!!
+
+Boa diversão
+*/
