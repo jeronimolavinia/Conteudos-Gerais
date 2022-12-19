@@ -11,3 +11,70 @@ Um exemplo de como ficaria a mensagem final para cada carro:
 
 Argo, R$ 30000, 2019, seminovo
 Corolla, R$ 60000, 2022, 0km
+
+
+programa {
+cadeia veiculoGlobal [5]
+real valorGlobal [5]
+inteiro anoGlobal [5]
+
+
+  funcao cadeia  leiaVeiculo(){
+    cadeia nomedoVeiculo
+    escreva("Digite o nome do veiculo: ")
+    leia(nomedoVeiculo)
+    retorne nomeVeiculo
+  }
+
+  funcao cadeia  leiaValor(){
+    cadeia valorVeiculo
+    escreva("Digite o valor: ")
+    leia(valordoVeiculo)
+    retorne valordoVeiculo
+  }
+
+  funcao cadeia  leiaAno(){
+    cadeia anoVeiculo
+    escreva("Digite o ano do veiculo: ")
+    leia(anodoVeiculo)
+    retorne anodoVeiculo 
+ }
+
+  funcao obternome(){
+    para(inteiro i = 0; i < 5; i++){
+      veiculoGlobal[i] = leiaVeiculo()
+    }
+  }
+ 
+  funcao obterprecos(){
+    para(inteiro i = 0; i < 5; i++){
+      valorGlobal[i] = leiaValor()
+    }
+  }
+  funcao obterAno(){
+    para(inteiro i = 0; i < 5; i++){
+      anoGlobal[i] = leiaAno()
+    }
+  } 
+
+  funcao cadeia situacaoVeiculo(inteiro veiculoAno){
+    se(veiculoAno < 2022){
+      retorne "Seminovo"
+    }senao(veiculoAno >= 2022){
+      retorne "Novo"
+    }
+  }
+ 
+
+  funcao escrevacatalogo(){
+    para(inteiro i = 0; i < 5; i++){
+    escreva("Modelo ", veiculoGlobal[i],"," "no valor de ", valorGlobal[i],"," "Ano ", anoGlobal[i])
+    }
+  }
+
+  funcao inicio(){
+
+  obternomes()
+  obterprecos()
+  obterAno()
+  escrevacatalogo()
