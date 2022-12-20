@@ -123,6 +123,36 @@ programa {
 }
 
 
+=======================================================================================================
+programa {
+
+  inteiro matriz[5][5] 
+  
+  funcao obterMatriz(){
+    para(inteiro x = 0; x < 5; x++){
+      para(inteiro y = 0; y < 5; y++){
+        se(4-x == y ou x == y){
+          matriz[x][y] = 1 
+        }senao {
+          matriz[x][y] = 0
+
+        }
+        escreva(" ", matriz[x][y], " ")
+      }
+      escreva("\n")
+    }
+  }
+
+
+  funcao inicio(){
+    obterMatriz()
+
+  }
+
+}
+
+
+
 
 
 
