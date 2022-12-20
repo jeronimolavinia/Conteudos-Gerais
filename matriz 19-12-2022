@@ -1,0 +1,40 @@
+programa {
+  inclua biblioteca Util --> u
+
+
+  inteiro vetor [5] = {7,7,7,7,7}
+  inteiro matriz [6][6] = {
+    {1,1,1,1,1,1}, 
+    {1,1,1,1,1,1}, 
+    {1,1,1,1,1,1},
+    {1,1,1,1,1,1},
+    {1,1,1,1,1,1},
+    {1,1,1,1,1,1}}
+
+  funcao inicio() {
+    para(inteiro i = 0; i < 6; i++){
+      para(inteiro j = 0; j < 6; j++){
+        u.aguarde(100)
+        escreva("Linha: ", i  , " x" , " Coluna: ", j , " Valor da posição ", matriz[i][j] , "\n")
+      }
+    }
+    
+  }
+}
+
+=======================================================================================================
+programa {
+  inclua biblioteca Util --> u
+  inteiro matriz [1000][1000] 
+    
+  funcao inicio() {
+    para(inteiro i = 0; i < 1000; i++){
+      para(inteiro j = 0; j < 1000; j++){
+        matriz[i][j] = u.sorteia(0,1)
+        escreva(" ", matriz[i][j], " ")
+      }
+      escreva("\n")
+      u.aguarde(1)
+    }
+  }
+}
