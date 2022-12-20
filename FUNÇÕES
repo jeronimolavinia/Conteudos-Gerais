@@ -79,27 +79,5 @@ inteiro anoGlobal [5]
   obterAno()
   escrevacatalogo()
   ========================================================================================================
-  programa {
-  inclua biblioteca Util --> u
-
-
-  inteiro vetor [5] = {7,7,7,7,7}
-  inteiro matriz [6][6] = {
-    {1,1,1,1,1,1}, 
-    {1,1,1,1,1,1}, 
-    {1,1,1,1,1,1},
-    {1,1,1,1,1,1},
-    {1,1,1,1,1,1},
-    {1,1,1,1,1,1}}
-
-  funcao inicio() {
-    para(inteiro i = 0; i < 6; i++){
-      para(inteiro j = 0; j < 6; j++){
-        u.aguarde(100)
-        escreva("Linha: ", i  , " x" , " Coluna: ", j , " Valor da posição ", matriz[i][j] , "\n")
-      }
-    }
-    
-  }
-}
-
+ 
+   
