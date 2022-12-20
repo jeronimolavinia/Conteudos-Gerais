@@ -89,6 +89,39 @@ inclua biblioteca Util --> lib
     
   }
 }
+=====================================================================================================
+
+/*
+
+ 1) Faça um programa que preencha uma matriz 10x10 somente com numeros inteiros
+ aleatorios.
+
+ 2) Mostrar matriz de forma ordenada.
+
+*/ 
+
+programa {
+
+  inclua biblioteca Util --> lib 
+  inteiro matriz[10][10] 
+  
+  funcao obterMatriz(){
+    para(inteiro x = 0; x < 10; x++){
+      para(inteiro y = 0; y < 10; y++){
+        matriz[x][y] = lib.sorteia(1,9)
+        escreva(" ", matriz[x][y] , " ")
+      
+      }
+      escreva("\n")
+    }
+  }
+  funcao inicio(){
+    obterMatriz()
+
+  }
+
+}
+
 
 
 
