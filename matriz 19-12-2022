@@ -38,3 +38,59 @@ programa {
     }
   }
 }
+==========================================================================================================
+//Correcao 20/12/2022
+/* Fazer um programa que gere uma matriz de 6x6 (Ou da sua preferência), que armazene para cada posição numeros aleatorios de 1 a 5.
+
+Após preencher toda a matriz, em outra estrutura de repetição, faça uma varredura na matriz e caso encontre um numero 3 (ou outro numero armazenado na constante "numeroComparacao", escreva:
+Na posição [NUMERO DA LINHA] X [NUMERO DA COLUNA] foi encontrado o numero 3
+*/
+
+programa {
+inclua biblioteca Util --> lib
+
+  inteiro const comparacao = 3
+  inteiro matriz[6][6] 
+
+
+  funcao preencherMatriz() {
+    escreva("Vai varrer a matriz \n")
+    para(inteiro x = 0; x < 6; x++){
+      para(inteiro y = 0; y < 6; y++){
+        matriz[x][y] = lib.sorteia(1,5)
+      }
+    }
+    escreva("Preencheu a matriz \n")
+  }
+
+  funcao varrerMatriz() {
+    ("Vai varrer a matriz \n")
+    para(inteiro x = 0; x < 6; x++){
+      para(inteiro y = 0; y < 6; y++){
+        se(compararNumeros(matriz[x][y])){
+          escreva("Na posição ", x , "X", y, "foi encontrado o numero", comparacao , "\n") 
+        }
+      }
+    }
+    escreva("Finalizado \n")
+  }
+
+  funcao logico compararNumeros(inteiro numeroAtual){
+    se(numeroAtual > comparacao){
+      retorne verdadeiro
+    }senao{
+      retorne falso
+    }
+  }
+
+  funcao inicio() {
+    preencherMatriz()
+    varrerMatriz()
+    
+  }
+}
+
+
+
+
+
