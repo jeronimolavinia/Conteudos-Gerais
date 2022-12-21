@@ -1,0 +1,68 @@
+programa 
+  funcao inicio() {
+    inteiro  x = 0
+
+    enquanto(verdadeiro){
+      x = x + 1
+      escreva("O valor da variavel é: ", x , "\n")
+    }
+    
+  }
+}
+=========================================================================================
+
+/* Faça um programa que tenha 2 opções:
+
+   1 - Se o usuario digitar "1", faça com que o programa continue executando.
+   2 - Se o usuario digitar "2",  faça com que o programa seja finalizado.
+
+  */
+  
+
+programa {
+  inteiro y 
+  logico continuaRepeticao = verdadeiro
+
+  funcao inicio() {
+    enquanto(continuaRepeticao){
+      escreva("Opção: [1], - Continuar repetição, [2], - Finalizado \n")
+      leia(y)
+
+      se(y == 1){
+        continuaRepeticao = verdadeiro
+      }senao se(y == 2){
+        continuaRepeticao = falso
+      }
+    }  
+  }
+}
+
+===============================================================================================
+programa 
+  funcao inicio()
+    inteiro  x 
+    logico parar = verdadeiro
+
+    enquanto(parar){
+      escreva("Escreva sua opção: [0] - sair, [1] - continuar \n")
+      leia(x)
+
+      
+      se(x == 0){
+        parar = falso
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
