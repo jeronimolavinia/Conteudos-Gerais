@@ -92,6 +92,58 @@ programa {
 }
 
 
+  /* 
+  Faça um programa que permita que o usuario preencher uma matriz 2x2
+  utilizando a estrutura de repetição enquanto.
+  Para cada valor que o usuario preencher, é necessário mostrar como
+  está o preenchimento da matriz.
+  Ao usuario digitar o numero 100, a repetição deverá ser finalizar. 
+  */
+
+programa {
+
+  inteiro posicao[2][2]
+  inteiro x , y , valor
+  logico matriz = verdadeiro 
+
+  funcao lerMatriz(){
+    para(inteiro x = 0; x < 2; x++){
+      para(inteiro y = 0; y < 2; y++){
+        se(posicao[x][y]){
+          escreva(posicao[x][y])
+        }senao{
+      
+        }
+      escreva("\n")
+      }
+    }
+  }
+
+  funcao repeticao(){
+    enquanto(matriz){
+      escreva("Informe a linha: \n")
+      leia(x)
+      escreva("Informe a coluna: \n")
+      leia(y)
+      escreva("Informe o valor: \n")
+      leia(valor)
+
+      se(valor == 100){
+        repeticao = falso
+      } 
+      
+    posicao[x][y] = valor
+    escreva("Sua matriz está completa \n")
+    lerMatriz()
+  }
+
+ funcao inicio() {
+  repeticao()
+
+  }
+}
+
+
 
 
 
