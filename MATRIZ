@@ -239,6 +239,57 @@ programa {
     letra()
   }
 }
+==================================================================================================================
+/* Obter somente o nome do usuario, onde o criterio para encerrar a repetição é o mesmo usado anteriormente.
+  e ao final imprimir os nomes obtidos em matriz. 
+ */
+
+programa {
+  
+  cadeia matriz[2][2] 
+  cadeia nome, condicao 
+  inteiro linha, coluna 
+  logico repeticao = verdadeiro
+
+  funcao obterNome(){
+    enquanto(repeticao){
+      escreva("Nome do usuario: ")
+      leia(nome)
+      escreva("Linha ")
+      leia(linha)
+      escreva("Coluna ")
+      leia(coluna)
+      escreva("Deseja digitar novamente? ")
+      leia(condicao)
+
+      matriz[linha][coluna] = nome
+      se(condicao == "n"){
+        repeticao = falso
+        
+      } 
+    }
+  }  
+  funcao obterMatriz(){
+    para(inteiro x = 0; x < 2; x++){
+      para(inteiro y = 0; y < 2; y++){
+        se(matriz[x][y] != ""){
+          escreva(matriz[x][y])
+
+
+        }senao{
+          escreva("x")
+        }
+      }
+    }
+  }
+
+  funcao inicio() {
+    obterNome()
+    obterMatriz()
+    
+  }
+}
+
 
 
 
