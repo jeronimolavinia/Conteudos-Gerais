@@ -173,7 +173,7 @@ programa {
       escreva("Deseja continuar? \n")
       leia(condicao)
 
-      se(condicao = "n"){
+      se(condicao == "n"){
         repeticao = falso
       }
 
