@@ -1,0 +1,56 @@
+LISTA DE COMANDOS 
+
+select_selecionar registros da tabela
+    - select [campos] from funcionarios (o * serve para selecionar todos os campos 'todas a informações contidas na tabela')
+update_atualizar registros da tabela 
+insert_inserir registros na tabela
+delete_excluir um registro da tabela 
+where_condicao > onde utilizar: select, update e delete. 
+    - update from pf
+    set name = 'pai do seu nenem', age = 23
+    where cpf = '00000000089'
+    
+    ==============================================================================================================
+    SELECT [campos]
+campos:* , nome, nascimento, cpf ...
+EXEMPLO: select nome, nascimento, cpf ....
+opcional: where
+
+UPDATE FROM [tabela] SET [campos] = [valor]
+WHERE ....
+EXEMPLO: update from funcionarios set nome = 'maria'
+where nomes: 'marcos'
+
+set: serve pra alterar o valor de campo especifico 
+opcional: where 
+
+DELETE 
+opcional: where
+
+===============================================================
+
+tabela: funcionarios
+
+ID       NAME        DATE  
+1       LAVINIA    07/11/1997
+2       MARIA      08/07/1985
+3       JOAO       05/09/1994
+
+select * from funcionarios 
+where id = 2
+
+update from funcionarios 
+set name  = 'MARIA DA SILVA' 
+where id = 2 
+
+delete from funcionarios 
+set name = 'LAVINIA'
+where id = 1 
+
+select * from funcionarios
+where id = 2 and id = 3 
+
+
+
+
+
