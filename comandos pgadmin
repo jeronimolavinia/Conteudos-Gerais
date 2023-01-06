@@ -49,6 +49,39 @@ where id = 1
 
 select * from funcionarios
 where id = 2 and id = 3 
+=============================================================
+DDL - data definition language: define estruturas de tabelas 
+    - CREAT: criar tabela, banco de dados 
+    - ALTER: alterar tabela, campos, banco de dados, usuario 
+    - DROP: apagar tabela, campos, banco de dados, usuario
+    - ADD COLUMN: adicionar mais um item na coluna. 
+
+CRIAR BANCO DE DADOS NO PGADMIN
+
+apertar alt + shift + Q  (query tool) = abrir pagina para digitar os comandos 
+f5 = rodar o programa
+
+CRIAR TABELA:
+create database lavinia
+create table funcionarios(
+
+    id integer, 
+    nome character varying, 
+    cpf char(11),
+    nascimento date, 
+)
+
+not null = nao nulo  (preenchimento obrigatório de algum valor)
+primary key = um atributo utilizado ligado a cada registro de um arquivo 
+
+
+
+
+
+
+
+
+
 
 
 
