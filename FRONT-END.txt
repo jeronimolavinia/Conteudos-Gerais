@@ -1,0 +1,7 @@
+FRONT-END
+
+PESQUISAR SOBRE "REACT"
+======================================
+JQUERY 
+
+.trigger() = mapeamento de um evento 
