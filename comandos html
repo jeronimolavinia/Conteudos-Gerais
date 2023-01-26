@@ -1,0 +1,19 @@
+COMANDOS (TAGS) HTML 
+
+! = abrir documento base de html 
+<head></head> = cabeçalho da pagina 
+<title></title> = titulo da pagina  
+<body></body> = corpo da pagina 
+<h1></h1> = Titulos 
+<p></p> Paragrafos  
+<hr> = linha 
+<br> = quebra de linhas
+<ul></ul> = lista desordenada 
+<li></li> = itens da lista 
+<ol></ol> = lista ordenada  
+<a></a> = atributo associado ao link: 
+<a href="arquivo-destino" (indica arquivo de destino)></a>
+<a target="_blank" (indica quando um documento ou imagem será aberto em uma nova pagina)></a>
+
+
+
